@@ -22,11 +22,12 @@ def handler_signal(signal, frame):
     print("\n\n[!] Out ............. \n")
     sys.exit(1)
 
-
+signal.signal(signal.SIGINT, handler_signal)
 if __name__ == '__main__':
-    signal.signal(signal.SIGINT, handler_signal)
+    
     commits = extract(REPO_DIR)
     for commit in commits:
         for word in KEY_WORDS:
             if re.search(word, commit.message, re.IGNORECASE):
                 print('Commit: {} - {}'.format(commit.hexsha, commit.message))
+    time.sleep(4)
