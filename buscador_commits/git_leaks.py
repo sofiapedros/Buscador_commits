@@ -9,7 +9,7 @@ import pprint
 REPO_DIR = './skale-manager'
 
 # Lista de palabras clave a buscar en los commits
-KEY_WORDS = ['credentials', 'password', 'key', 'username', 'private']
+KEY_WORDS = ['credential', 'password', 'key', 'username', 'private', 'leak']
 
 
 def extract(repo_dir):
