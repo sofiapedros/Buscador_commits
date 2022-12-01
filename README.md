@@ -1,5 +1,5 @@
 # Buscador_commits
-En la carpeta se encuentran tres documentos: 
+En la carpeta 'buscador commits' se encuentran tres documentos: 
 - git_leaks.py
 - requirements.txt
 - skale-manager
